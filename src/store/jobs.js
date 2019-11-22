@@ -35,7 +35,7 @@ const defaultJobs = {
  /**
  * REDUCER
  */
-export default function(state = defaultBook, action) {
+export default function(state = defaultJobs, action) {
     switch (action.type) {
       case GET_JOBS:
         return {...state, jobs: action.jobs}
