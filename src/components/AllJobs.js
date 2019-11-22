@@ -4,6 +4,8 @@ import {getJobs} from '../store/jobs'
 
 import Job from './Job'
 
+import '../css/AllJobs.css'
+
 class AllJobs extends React.Component {
     constructor(props) {
         super(props)
@@ -16,7 +18,7 @@ class AllJobs extends React.Component {
     render() {
         const jobs = this.props.jobs
            return (
-               <div>
+               <div className = 'all-jobs'>
                    {jobs.map(job => {
                        return (
                            <Job job={job} key={job.id}/>
