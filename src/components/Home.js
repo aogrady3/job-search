@@ -1,9 +1,14 @@
 import React from 'react'
 
+//Components
+import AllJobs from './AllJobs'
+
 class Home extends React.Component {
     render() {
         return (
-            <div>HOME SCREEN FOR ALL JOBS</div>
+            <div>
+                <AllJobs />
+            </div>
         )
     }
 }
