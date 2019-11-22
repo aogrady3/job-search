@@ -1,4 +1,23 @@
-.one-job img{
+.single-job img{
     width: 400px;
     height: 100px;
+}
+
+
+.single-job-description{
+    width: 800px;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.single-job{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 }

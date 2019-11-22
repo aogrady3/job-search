@@ -1,8 +1,24 @@
-.single-job-post img{
-    width: 100px;
-    height: 100px;
+.full-job {
+    width: 750px;
+    align-items: flex-start;
 }
 
-.full-post{
-    
+.job-title{
+    width: 400px;
+    align-items: flex-start;
+
+}
+
+.job-details{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.job-title p{
+    color: darkblue;
+}
+
+.job-title p:hover{
+    text-decoration: underline;
 }

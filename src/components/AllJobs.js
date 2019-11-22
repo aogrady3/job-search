@@ -19,6 +19,8 @@ class AllJobs extends React.Component {
         const jobs = this.props.jobs
            return (
                <div className = 'all-jobs'>
+                 <h1>All Jobs</h1>
+                 <hr />
                    {jobs.map(job => {
                        return (
                            <Job job={job} key={job.id}/>

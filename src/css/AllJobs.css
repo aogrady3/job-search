@@ -6,3 +6,10 @@
 .all-jobs a:hover{
     color: gray;
 }
+
+.all-jobs{
+    width: 800px;
+    border: solid;
+    border-radius: 10px;
+}
+
