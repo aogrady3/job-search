@@ -8,14 +8,14 @@ const GET_JOBS = 'GET_JOBS'
 /**
  * ACTION CREATORS
  */
-const getAllJobs = jobs => ({type: GET_JOBS}, jobs)
+const getAllJobs = jobs => ({type: GET_JOBS, jobs})
 
  /**
  * THUNK CREATORS
  */
 export const getJobs = () => async dispatch => {
     try {
-      const {data} = await axios.get('https://jobs.github.com/positions.json')
+      const {data} = await axios.get('https://cors-anywhere.herokuapp.com/https://jobs.github.com/positions.json')
       dispatch(getAllJobs(data))
     } catch (err) {
       console.error(err)

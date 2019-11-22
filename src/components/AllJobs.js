@@ -9,8 +9,13 @@ class AllJobs extends React.Component {
         super(props)
       }
 
+      componentDidMount() {
+          this.props.getJobs();
+      }
+
     render() {
-        console.log(this.state)
+        console.log(this.props)
+        const jobs = this.props.jobs
         return (
             <Job />
         )
