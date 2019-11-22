@@ -14,17 +14,22 @@ class AllJobs extends React.Component {
       }
 
     render() {
-        console.log(this.props)
         const jobs = this.props.jobs
-        return (
-            <Job />
-        )
+           return (
+               <div>
+                   {jobs.map(job => {
+                       return (
+                           <Job job={job} key={job.id}/>
+                       )
+                   })}
+               </div>
+           )
     }
 }
 
 const mapStateToProps = state => {
     return {
-      jobs: state.jobs,
+      jobs: state.jobs.jobs,
     }
   }
   
