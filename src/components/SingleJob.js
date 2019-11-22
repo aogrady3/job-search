@@ -3,7 +3,7 @@ import {connect} from 'react-redux'
 import {getOneJob} from '../store/jobs'
 
 //style
-import '../css/OneJob.css'
+import '../css/SingleJob.css'
 
 class SingleJob extends React.Component {
     constructor(props){
